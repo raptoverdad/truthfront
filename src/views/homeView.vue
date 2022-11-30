@@ -59,7 +59,7 @@ this.$router.push('about')
 }
 ,openChat(){
 
-  this.$router.push('chat')
+  window.location.href='https://theraptoreumtruth.netlify.app/chat'
 
 },openSettings(){
 
