@@ -8,8 +8,8 @@
 
  
   <h1 style="font-family:'Kanit' , sans-serif;color: #f00;" >truth chat</h1>
-  <h1 style="font-family:'Kanit' , sans-serif;color: #f00;" v-if="$store.state.language === 'spanish' " >*puede que haya un retraso al enviar tu mensaje*</h1>
-  <h1 style="font-family:'Kanit' , sans-serif;color: #f00;" v-if="$store.state.language === 'english' " >*there could be delay when sending your message*</h1>
+  <small style="font-family:'Kanit' , sans-serif;color: #f00;text-align: center;" v-if="$store.state.language === 'spanish' " >*puede que haya un retraso al enviar tu mensaje*</small>
+  <small style="font-family:'Kanit' , sans-serif;color: #f00;text-align: center;" v-if="$store.state.language === 'english' " >*there could be delay when sending your message*</small>
   <div class="chatBox">
    <div class="chatMessage" v-for="item in messages"><img class="chatProfilePicture" v-bind:src="item.profilepicture" alt=""><h1 class="chatUser">{{item.user + ':'}}</h1> <p class="chatUserMessage">{{item.mensaje}}</p></div>
   </div>
