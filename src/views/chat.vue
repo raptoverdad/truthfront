@@ -127,7 +127,7 @@ setTimeout(() => {
   }).catch(err=>{
  alert('please login or create an account // porfavor inicie sesion o cree una nueva cuenta')
 
- window.location.href='http://localhost:8080/'
+ window.location.href='https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/'
 })
 },
 arrow(){

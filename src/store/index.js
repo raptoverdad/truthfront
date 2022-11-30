@@ -45,7 +45,7 @@ else{
        
           state.isUser=true
           state.isNotUser=false
-           window.location.href = "http://localhost:8080/"
+           window.location.href = "https://truthbackend1-production.up.railway.app"
 
           }else if(res.data.access=='denied'){
             console.log('denied:',res)
@@ -177,12 +177,12 @@ state.credentialError=false
     console.log('success')
     state.picture=res.data.picture
     state.username=res.data.username
-    window.location.href = "http://localhost:8080/userSettings"
+    window.location.href = "https://truthbackend1-production.up.railway.app/userSettings"
   }
 })
 .catch(err=>{
   if(err){
-    window.location.href = "http://localhost:8080/"
+    window.location.href = "https://truthbackend1-production.up.railway.app"
   }
 })
 },

@@ -33,7 +33,7 @@ export default {
   },
 
 created(){
-  axios.get(`http://localhost:3000/settings/${localStorage.getItem('token')}`)
+  axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
 .then(res=>{
   if(res.data.success==='true'){
     console.log('success')

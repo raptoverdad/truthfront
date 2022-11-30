@@ -87,14 +87,14 @@
       methods:{
       english:()=>{
        localStorage.setItem("language","english")
-       window.location.href = "http://localhost:8080/"
+       window.location.href = "https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/"
       },
       spanish:()=>{
         localStorage.setItem("language","spanish")
-        window.location.href = "http://localhost:8080/"
+        window.location.href = "https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/"
       },
      goHome(){
-      window.location.href='http://localhost:8080/'
+      window.location.href='https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/'
      },
      goYoutube(){
 window.location.href='https://www.youtube.com/channel/UCByK3GTopHZperEh03Ta6BA'

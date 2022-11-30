@@ -65,7 +65,7 @@ localStorage.removeItem('token')
 localStorage.removeItem('user')
 localStorage.removeItem('picture')
 localStorage.removeItem('email')
-window.location.href='http://localhost:8080/'
+window.location.href='https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/'
 })
 },
 methods:{
@@ -78,11 +78,11 @@ methods:{
     if(res.data.res==='updated' && localStorage.getItem('language')==='english'){
       document.querySelector('.picture').src=img
       alert('profile picture succesfully updated!!')
-      window.location.href='http://localhost:8080/userSettings'
+      window.location.href='https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app//userSettings'
    }else if(res.data.res==='updated' && localStorage.getItem('language')==='spanish'){
       document.querySelector('.picture').src=img
       alert('¡se ha cambiado tu foto de perfil!')
-      window.location.href='http://localhost:8080/userSettings'
+      window.location.href='https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/userSettings'
    }
   })
   }
