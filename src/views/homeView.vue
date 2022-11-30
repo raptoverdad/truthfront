@@ -153,5 +153,9 @@ background-color: #000;
   max-width: 100vw;
  
 }
+.container img{
+
+height: 80%;
+}
 }
 </style>
