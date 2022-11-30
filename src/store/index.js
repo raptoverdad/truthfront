@@ -45,7 +45,7 @@ else{
        
           state.isUser=true
           state.isNotUser=false
-           window.location.href = "https://truthbackend1-production.up.railway.app"
+           window.location.href = "https://theraptoreumtruth.netlify.app/"
 
           }else if(res.data.access=='denied'){
             console.log('denied:',res)
@@ -166,7 +166,7 @@ state.credentialError=false
   localStorage.removeItem("token")
   localStorage.removeItem("user")
   localStorage.removeItem("picture")
-  window.location.href = "http://localhost:8080/"
+  window.location.href = "https://theraptoreumtruth.netlify.app/"
 },   goToHome:()=>{
   this.$router.push('homeView')
 },
@@ -177,12 +177,12 @@ state.credentialError=false
     console.log('success')
     state.picture=res.data.picture
     state.username=res.data.username
-    window.location.href = "https://truthbackend1-production.up.railway.app/userSettings"
+    window.location.href = "https://theraptoreumtruth.netlify.app/userSettings"
   }
 })
 .catch(err=>{
   if(err){
-    window.location.href = "https://truthbackend1-production.up.railway.app"
+    window.location.href = "https://theraptoreumtruth.netlify.app/"
   }
 })
 },

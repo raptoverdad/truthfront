@@ -108,7 +108,7 @@ beforeCreate(){
 },
 methods:{
     goToHome:()=>{
-        window.location.href="https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/"
+        window.location.href="https://theraptoreumtruth.netlify.app/"
     }
 }
 }
