@@ -52,13 +52,13 @@ else{
             loginError=true
           }
           } catch (error) {
-            console.log(error)
+        
           }
 
        
           }).catch(err=>{
          
-           console.log(err)
+   
               try {
                 if(err.response.data.error === "userDoesn'tExist"){
                 
@@ -71,7 +71,7 @@ else{
                   state.error=true
                 } 
               } catch (error) {
-                console.log(error)
+            
               }
                
               try {
@@ -85,7 +85,7 @@ else{
                 alert('contraseña invalida')
             }
               } catch (error) {
-                console.log(error)
+          
               }
          
         })
@@ -104,7 +104,7 @@ else{
            axios.post('https://truthbackend1-production.up.railway.app/register',registerUserData)
            .then(res=>{
           
-             console.log('res',res)         
+            
 //aqui vendria la redireccion a la pagina para que confime su correo electronico
             
             try{
@@ -112,7 +112,7 @@ else{
                alert('something went wrong please try again later // algo salió mal porfavor intente mas tarde')
               }else if(res.data.access == 'granted'){
                 state.registerSuccess=true
-                console.log('granted',res.data)
+              
               }
             }catch(e){
 
@@ -127,11 +127,10 @@ else{
   
               }
              } catch (error) {
-              console.log(error)
+  
              }
               try {
-                console.log('err',err)
-
+        
                 if(err.response.data.error.errors[0].param==='registerUser'){
                   alert('invalid username // nombre de usuario invalido')
                 }else if(err.response.data.error.errors[0].param==='registerEmail'){
@@ -142,7 +141,7 @@ else{
                   alert('passwords do not match // las contraseñas no coinciden')
                 }
               } catch (error) { 
-                console.log(error)
+   
               }
        
            })
@@ -174,7 +173,7 @@ state.credentialError=false
  axios.get(`https://truthbackend1-production.up.railway.app/settings/${state.token}`)
 .then(res=>{
   if(res.data.success==='true'){
-    console.log('success')
+ 
     state.picture=res.data.picture
     state.username=res.data.username
     window.location.href = "https://theraptoreumtruth.netlify.app/userSettings"

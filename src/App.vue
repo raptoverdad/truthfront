@@ -63,9 +63,9 @@
       mounted() {
       axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
      .then(res=>{
-      console.log(res)
+   
       if(res.data.success==='true'){
-      console.log('success')
+   
       this.username=res.data.username
    
     localStorage.removeItem('user') 

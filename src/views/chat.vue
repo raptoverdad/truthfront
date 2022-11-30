@@ -42,7 +42,7 @@ return{
 created(){
   axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
      .then(res=>{
-      console.log(res)
+
       if(res.data.success==='true'){
         localStorage.removeItem('user')
         localStorage.removeItem('picture')
@@ -89,7 +89,7 @@ socket.emit('chatVisitor')
 })
 socket.on('chatMessages',(datos)=>{
 this.messages=datos
-console.log('messages:',this.messages)
+
 })
 socket.on('permission',()=>{
 alert('invalid credentials//credenciales invalidas')
@@ -98,9 +98,8 @@ socket.on('message-status',()=>{
 alert('something went wrong please try again later//algo salió mal, porfavor intentelo denuevo')
 })
 socket.on('chatMessages',(datos)=>{
-t
-his.messages=datos
-console.log('messages:',this.messages)
+this.messages=datos
+
 })
 
 }
@@ -113,10 +112,9 @@ setTimeout(() => {
     document.querySelector('.chatBox').scrollBy(0,40000000)
 }, "0500")
 
-  console.log('frontend message:',this.message)
   axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
      .then(res=>{
-      console.log(res)
+
       if(res.data.success==='true'){
         localStorage.removeItem('user')
         localStorage.removeItem('picture')

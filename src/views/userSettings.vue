@@ -47,7 +47,7 @@ created() {
   axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
 .then(res=>{
   if(res.data.success==='true'){
-    console.log('success')
+
     this.picture=res.data.picture
     this.username=res.data.username
 

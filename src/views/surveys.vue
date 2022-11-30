@@ -88,7 +88,7 @@ return{
 created(){
   axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
      .then(res=>{
-      console.log(res)
+
       if(res.data.success==='true'){
         localStorage.removeItem('user')
         localStorage.removeItem('picture')
@@ -111,7 +111,7 @@ mounted(){
 
 socket.emit('surveysVisitor')
 socket.on('surveysvotes',data=>{
-  console.log(data)
+
  this.raptoreumzonevotes=data.raptoreumzonevotes
  this.flockpoolvotes=data.flockpoolvotes
  this.raptorhashvotes=data.raptorhashvotes
@@ -138,7 +138,7 @@ methods:{
     surveyvote(vote){
       axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
      .then(res=>{
-      console.log(res)
+
       if(res.data.success==='true'){
         localStorage.removeItem('user')
         localStorage.removeItem('picture')

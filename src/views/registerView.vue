@@ -85,9 +85,7 @@ components: {
     }
   },
   computed:{
-   userRegister(){
-   
-   }
+
   },
   methods:{
     goToHome:()=>{
