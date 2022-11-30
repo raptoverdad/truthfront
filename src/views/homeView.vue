@@ -59,7 +59,7 @@ this.$router.push('about')
 }
 ,openChat(){
 
-  window.location.href='https://6386e8a973fe3103a27554a0--enchanting-basbousa-1f7aaa.netlify.app/chat'
+  this.$router.push('chat')
 
 },openSettings(){
 
