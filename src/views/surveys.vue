@@ -136,6 +136,7 @@ methods:{
         window.location.href="https://theraptoreumtruth.netlify.app/"
     },
     surveyvote(vote){
+      console.log(vote)
       axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
      .then(res=>{
 
