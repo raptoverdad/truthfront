@@ -57,6 +57,9 @@ const socket=io('https://truthbackendsockets-production.up.railway.app/',{
   withCredentials:false,
   extraHeaders:{
     "Access-Control-Allow-Origin":null
+  },
+  query:{
+    "key":"LONGLIVESKRILLE"
   }
 })
 
@@ -138,7 +141,7 @@ methods:{
         window.location.href="https://theraptoreumtruth.netlify.app/"
     },
     surveyvote(vote){
-      console.log(vote)
+
       axios.get(`https://truthbackend1-production.up.railway.app/settings/${localStorage.getItem('token')}`)
      .then(res=>{
 
