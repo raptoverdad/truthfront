@@ -28,7 +28,7 @@ const socket=io('https://truthbackendsockets-production.up.railway.app/',{
     "Access-Control-Allow-Origin":null
   },
   query:{
-    "key":"LONGLIVESKRILLE"
+    "key":"LONGLIVESKRILLEX"
   }
 })
 export default {
