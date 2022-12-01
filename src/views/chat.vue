@@ -94,6 +94,9 @@ socket.on('chatMessages',(datos)=>{
 this.messages=datos
 
 })
+socket.on('wrong-string',()=>{
+  alert('you are using not allowed characters // estas usando caracteres no permitidos')
+})
 socket.on('permission',()=>{
 alert('invalid credentials//credenciales invalidas')
 })
