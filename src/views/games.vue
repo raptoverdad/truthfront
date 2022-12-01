@@ -2,7 +2,7 @@
 
 <div class="games" v-if="$store.state.language == 'english'">
 
-    <h1 class="gametitle">THE RAPTOREUM TRUTH'S GAMES</h1>
+    <h1 class="gametitle">THE RAPTOREUM TRUTH GAMES</h1>
     <h2 class="gametitle2">play the games raptoverdad has created for the raptoreum community</h2>
     
     <div class="wrapperGames">
