@@ -102,6 +102,8 @@ this.messages=datos
 
 })
 
+},destroyed(){
+  socket.disconnect()
 }
 ,
 methods:{

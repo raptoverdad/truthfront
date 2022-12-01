@@ -130,6 +130,8 @@ console.log('socketvisitordata:',data)
  this.novotes=data.novotes
 })
 
+},destroyed(){
+  socket.disconnect()
 },
 methods:{
     goToHome:()=>{
