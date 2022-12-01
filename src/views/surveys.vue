@@ -111,7 +111,7 @@ mounted(){
 
 socket.emit('surveysVisitor')
 socket.on('surveysvotes',data=>{
-
+console.log('socketvisitordata:',data)
  this.raptoreumzonevotes=data.raptoreumzonevotes
  this.flockpoolvotes=data.flockpoolvotes
  this.raptorhashvotes=data.raptorhashvotes
